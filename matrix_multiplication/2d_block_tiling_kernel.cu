@@ -70,7 +70,7 @@ __global__ void block_tiling_2d_matrix_mul(float *A, float *B, float *C, int m, 
         }
 
         __syncthreads();
-
+ 
         A += BK;   
         B += BK * N;
 
